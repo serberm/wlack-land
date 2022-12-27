@@ -1,0 +1,195 @@
+.about-us__wrapper {
+  width: 1050px;
+  margin: 131px auto 127px;
+}
+
+@media screen and (max-width: 1199px) {
+  .about-us__wrapper {
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+
+
+/* about us header */
+
+.about-us__header {
+  position: relative;
+}
+
+.about-us__header h1 {
+  font-weight: 600;
+  font-size: 55px;
+  color: #000;
+}
+
+.about-us__header h3 {
+  font-weight: 600;
+  font-size: 35px;
+  color: #2f326a;
+}
+
+.about-us__header p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #7a7c7f;
+}
+
+.about-us__header::after {
+  content: "";
+  display: inline-block;
+  width: 132px;
+  height: 132px;
+  background-image: url("/assets/img/index2-img/about-us.png");
+  background-size: cover;
+  position: absolute;
+  right: -132px;
+  top: -25px;
+}
+
+@media screen and (max-width: 1199px) {
+  .about-us__header {
+    width: auto;
+    padding: 0 16px;
+  }
+
+  .about-us__header h1 {
+    font-size: 24px;
+  }
+
+  .about-us__header p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .about-us__header::after {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* about us */
+
+.about-us {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+
+.about-us__info {
+  width: 390px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  color: #000;
+}
+
+.about-us__info h2 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.about-us__info p {
+  font-weight: 600;
+  font-size: 19px;
+  margin-bottom: 6px;
+}
+
+.about-us__info li {
+  font-size: 16px;
+}
+
+.about-us__info .caption {
+  font-weight: 600;
+  color: #616468;
+  margin-bottom: 25px;
+}
+
+.about-us__info li:not(.caption) {
+  font-weight: 400;
+  color: #000000;
+  margin-top: 8px;
+}
+
+.about-us__info a::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='41px' height='20px'%3e%3cpath fill-rule='evenodd' fill='rgb(97, 100, 104)' d='M40.711,9.365 L40.711,9.365 L31.622,0.357 C31.296,-0.021 30.722,-0.064 30.341,0.259 C29.960,0.583 29.915,1.151 30.242,1.529 C30.272,1.564 30.305,1.597 30.341,1.627 L37.875,9.104 L1.892,9.104 C1.391,9.104 0.984,9.507 0.984,10.005 C0.984,10.502 1.391,10.905 1.892,10.905 L37.875,10.905 L30.341,18.373 C29.960,18.696 29.915,19.265 30.242,19.643 C30.568,20.020 31.142,20.065 31.523,19.741 C31.559,19.711 31.592,19.678 31.622,19.643 L40.711,10.635 C41.064,10.284 41.064,9.716 40.711,9.365 Z'/%3e%3c/svg%3e");
+  background-size: 100% 100%;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.about-us__info a:hover::after {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+@media screen and (max-width: 1199px) {
+  .about-us {
+    display: block;
+    margin-top: 36px;
+  }
+
+  .about-us__info {
+    display: block;
+    padding: 0 16px;
+    margin-bottom: 28px;
+  }
+
+  .about-us__info h2 {
+    font-size: 24px;
+  }
+
+  .about-us__info ul {
+    margin-top: 32px;
+  }
+
+  .about-us__info p,
+  .about-us__info li {
+    font-size: 18px;
+  }
+
+  .about-us__info li:not(.caption) {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,172 @@
+.security__wrapper {
+  width: 1100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 131px auto 90px;
+}
+
+@media screen and (max-width: 1199px) {
+
+  .app {
+    padding-bottom: 65px;
+  }
+
+  .security__wrapper {
+    width: auto;
+    padding: 0 16px;
+    margin-top: 0;
+  }
+}
+
+/* security tabs */
+
+.security__tabs {
+  width: 236px;
+  position: relative;
+}
+
+.security__tabs::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: #f7f9fc;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.security__tabs li {
+  font-weight: 400;
+  font-size: 17px;
+  color: #7a7c7f;
+  line-height: 35px;
+}
+
+.security__tabs li.active,
+.security__tabs li:hover {
+  font-weight: 600;
+  color: #000000;
+  border-right: 2px solid #69a9ff;
+}
+
+@media screen and (max-width: 1199px) {
+  .security__tabs {
+    width: auto;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    background: #ffffff;
+    padding: 0 16px;
+    overflow-x: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .security__tabs::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #edeff2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .security__tabs li {
+    font-size: 15px;
+    line-height: 63px;
+  }
+
+  .security__tabs li:not(:first-child) {
+    margin-left: 21px;
+  }
+
+  .security__tabs li.active,
+  .security__tabs li:hover {
+    border-right: 0;
+    border-top: 2px solid #6515dd;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* security */
+
+.security {
+  width: 795px;
+  color: #000000;
+}
+
+.security h1 {
+  width: 300px;
+  font-weight: 600;
+  font-size: 55px;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.security h1::after {
+  content: "";
+  display: block;
+  width: 185px;
+  height: 185px;
+  background-image: url("/assets/img/index2-img/security.png");
+  background-size: cover;
+  position: absolute;
+  top: -22px;
+  right: -205px;
+}
+
+.security h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 45px;
+}
+
+.security p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .security h1::after {
+    display: none;
+  }
+
+  .security h1 {
+    width: auto;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .security h2 {
+    margin-top: 32px;
+  }
+
+  .security p {
+    margin-top: 15px;
+  }
+}

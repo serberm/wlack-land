@@ -1,0 +1,6 @@
+myApp:
+  component: "@serverless/website"
+  inputs:
+    code:
+      src: ./public
+  domain: www.wlack.com

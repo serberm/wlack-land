@@ -1,0 +1,173 @@
+.privacy__wrapper {
+  width: 1106px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 185px auto 105px;
+}
+
+@media screen and (max-width: 1199px) {
+  .app {
+    padding-bottom: 65px;
+  }
+
+  .privacy__wrapper {
+    width: auto;
+    padding: 0 16px;
+    margin-top: 0;
+  }
+}
+
+
+
+
+/* privacy tabs */
+
+.privacy__tabs {
+  width: 200px;
+  background: #f7f9fc;
+  padding: 25px;
+}
+
+.privacy__tabs li:not(:first-child) {
+  margin-top: 15px;
+}
+
+.privacy__tabs a {
+  font-weight: 400;
+  font-size: 17px;
+  color: #7a7c7f;
+}
+
+.privacy__tabs a.active,
+.privacy__tabs a:hover {
+  font-weight: 600;
+  color: #000;
+}
+
+@media screen and (max-width: 1199px) {
+  .privacy__tabs {
+    width: auto;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    background: #ffffff;
+    padding: 0 16px;
+    overflow-x: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .privacy__tabs::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #edeff2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .privacy__tabs li {
+    font-size: 15px;
+    line-height: 63px;
+  }
+
+  .privacy__tabs li:not(:first-child) {
+    margin-left: 21px;
+    margin-top: 0;
+  }
+
+  .privacy__tabs li a {
+    display: inline-block;
+    line-height: inherit;
+  }
+
+  .privacy__tabs li a.active,
+  .privacy__tabs li a:hover {
+    border-right: 0;
+    border-top: 2px solid #6515dd;
+  }
+}
+
+
+
+
+
+/* privacy */
+
+.privacy {
+  width: 719px;
+  color: #000;
+}
+
+.privacy h1 {
+  font-weight: 600;
+  font-size: 55px;
+  margin-top: -13px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.privacy h1::after {
+  content: "";
+  display: block;
+  width: 353px;
+  height: 353px;
+  background-image: url("/assets/img/index2-img/privacy.png");
+  background-size: cover;
+  position: absolute;
+  top: -52px;
+  left: 436px;
+  z-index: -1;
+}
+
+.privacy p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+.privacy h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 43px;
+}
+
+@media screen and (max-width: 1199px) {
+
+  .privacy h1 {
+    width: auto;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .privacy h1::after,
+  .privacy h1 br {
+    display: none;
+  }
+
+  .privacy h2 {
+    margin-top: 32px;
+  }
+
+  .privacy p {
+    margin-top: 15px;
+  }
+}
